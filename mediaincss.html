@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border: 3px solid black;
+            background-color: bisque;
+            display: flex;
+            flex-direction: row;
+            width: 500px;
+            height: 500px;
+            margin: 5px;
+            padding: 5px;
+             
+        }
+        #boxleft{
+            background-color: aqua;
+            border: 3px solid black;
+            width: 50%;
+            margin: 5px;
+            padding: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        #boxright{
+            background-color: blueviolet;
+            border: 3px solid black;
+            width: 50%;
+            margin: 5px;
+            padding: 5px;
+        }
+        p{
+            border: 3px solid red;
+        }
+        img{
+            width: 150px;
+            height: 350px;
+        }
+
+
+        @media  (max-width:640px) {
+
+            .container{
+                flex-direction: column;
+            }
+            
+        }
+
+
+    </style>
+    
+</head>
+<body>
+   
+    <div class="container">
+     <div id="boxleft">
+        <p>text1</p>
+        <p>text2</p>
+
+
+     </div>  
+     <div id="boxright">
+        <img src="images/bmw1.1.jpg" alt="bmw"/>
+
+     </div> 
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>
